@@ -2,6 +2,7 @@
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart',
+            // alignTicks: false,
             type: 'area',
             backgroundColor: {
                 linearGradient: [100, 300, 100, 50],
@@ -10,8 +11,7 @@
                     [1, 'rgb(240, 240, 255)']
                 ]
             },
-            padding: 0,
-            lang: ["January" , "February" , "March" , "April" , "May" , "June" , "July" , "August" , "September" , "October" , "November" , "December"]
+            padding: 0
         },
         title: {
             text: 'Ololo'
@@ -20,21 +20,28 @@
             text: 'Ololo2'
         },
         xAxis: {
-            tickWidth: 0
+            min: 1,
+            max: 10,
+            tickInterval: 1,
+            tickWidth: 0,
+            gridLineWidth: 1,
+            floor: 0
 
         },
-        yAxis: {},
+        yAxis: {
+            opposite: true
+        },
         series: [{
                 name: 'Jane',
-                data: [110, 235, 369, 640, 500, 720, 300]
+                data: [110, 235, 369, 640, 500, 720, 300, 0, 426, 660, 550, 480]
         },
             {
                 name: 'Jane',
-                data: [120, 150, 20, 426, 660, 550, 480]
+                data: [120, 150, 20, 426, 660, 550, 480, 210, 150, 20, 426, 660, 50]
             },
             {
                 name: 'Jane',
-                data: [20, 50, 180, 336, 460, 480, 400]
+                data: [20, 50, 180, 336, 460, 480, 400, 180, 336, 460, 480, 400]
             }
         ]
 
