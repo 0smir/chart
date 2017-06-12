@@ -25,10 +25,14 @@
             tickInterval: 1,
             tickWidth: 0,
             gridLineWidth: 1,
-            floor: 0
+            floor: 0,
+            offset: -25,
 
         },
         yAxis: {
+            min: 1,
+            endOnTick: false,
+            gridLineDashStyle: 'ShortDash',
             opposite: true
         },
         series: [{
