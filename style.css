@@ -3,3 +3,18 @@
     height:400px;
     border: 1px solid red;
 }
+
+#graphik{
+    width:50%;
+    height:400px;
+    border: 1px solid red;
+    background: blue;
+}
+
+body{
+    padding: 100px 20px;
+}
+
+#graphik .highcharts-grid-line {
+    fill: #fff;
+}
